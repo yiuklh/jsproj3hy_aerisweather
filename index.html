@@ -1,1 +1,205 @@
+<html lang="en">
 
+<head>
+  <title>Aeris.js beta Weather Map Setup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+  <!--link Font Awesome CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <!--link Leaflet CSS and JS -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+        
+  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+  <!--link AerisJS for Leaflet-->      
+  <!--set Leaflet as default weather mapping library-->
+  <script type="text/javascript" src="https://cdn.aerisjs.com/aeris-leaflet.min.js"></script>
+  
+  <!--Setup map dimensions-->
+  <style>
+  /*Setup map dimensions*/
+  #map {
+    width: 100%;
+    height: 600px;
+  }
+    
+  /*MY CSS*/
+  body {
+    font-family: "Arial";
+    color: #302D33;/*soft black*/
+    background-color: whitesmoke;
+    line-height: 1.5;
+  }
+
+ .textDiv {
+   margin: 0 auto;
+   padding: 20px 100px;
+ }
+
+ p, li {
+   font-size: 18px;
+ }
+
+ ul {
+   list-style-type: disc;
+ }
+
+ .highlight {
+   background: yellow;
+ }
+
+ .red {
+    color: red;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 16px;
+ }
+
+ ol a {
+    color: green;
+ }
+
+ a {
+    text-decoration: none;
+    color: #778899;
+ }
+
+ a:hover {
+    color: black;
+ }
+
+ .footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 60px 0;
+    text-align: center;
+    color: grey;
+ }
+
+ h5 {
+    font-weight: 300;
+ }
+  </style>
+</head>
+
+<body>
+  <!--map placeholder-->
+  <div id="map"></div>
+
+  <!--text content-->
+  <div class="textDiv">
+    <p class="red">//IMPORTANT: AerisWeather map tiles layers are mainly consist of USA data, hence the coverages in Canada may be limited.</p>
+    <p>Please consult <a href="https://weather.gc.ca/index_e.html" target="_blank" class="red">Environment Canada</a> for data services, and <a href="https://www.theweathernetwork.com/site-map" target="_blank" class="red">@weathernetwork</a> for weather forecasts in Canada.</p><br>
+
+    <h3>http://codepen.io/yiuklh/pen/EywpZL/</h3>    
+    <h2>Intro: Steps to create an Aeris.js beta Weather Map with Leaflet v0.7.7</h2>
+    <h4>Initial setup, Add weather map tiles layers, adjust layer opacity (transparency)</h4>
+
+    <p><span class="highlight">Note: The "Esri World Imagery" was set for initial display</span>, but Leaflet default basemap is actually the "OSM".</p><br>
+    
+    <p>This demo will adding a radar layer onto a Leaflet.js map.</p>
+    
+    <ol>
+      <li>Setup Aeris.js Weather from an existing Leaflet.js html.
+        <ul>
+          <li>Link Aeris.js: the mapping library for <a href="https://cdn.aerisjs.com/aeris-leaflet.min.js" target="_blank">Leaflet</a></li>
+          <li>Sign up a FREE <a href="http://www.aerisweather.com/signup/" target="_blank">AerisWeather API Developer</a> account</li>
+          <li><span class="highlight"><strong>Get an Aeris API key</strong></span>, will need yours coding this webmap to work.</li>
+        </ul>
+      </li><br>
+
+      <li>Create a <a href="http://leafletjs.com/" target="_blank">Leaflet.js</a> map.</li><br>
+
+      <li><span class="highlight"><strong>Configure Aeris API key</strong></span></li><br>
+
+      <li>Add the Aeris Map Tiles Layers:
+        <ul>
+          <li>Radar -USA, updates per 6min.</li>
+          <li>Infrared Satellite -North America, updates per 30 min.</li>
+          <li>Current Temperatures</li>
+        </ul>
+      </li><br>
+
+        <li>Adjust layer <a href="http://www.aerisweather.com/support/docs/aeris-maps/layer-modifiers/opacity" target="_blank">opacity</a> (transparency) for the satellite layer.</li><br>
+
+      <li>You have created your first AerisWeather map :) !</li><br>
+
+      <li>Learn more at <a href="http://www.aerisweather.com/support/docs/aeris-maps/" target="_blank">Aeris Maps Platform (AMP)</a>.
+        <ul>
+          <li><a href="http://www.aerisweather.com/support/docs/" target="_blank">Support Help Center</a></li>
+          <li><a href="http://docs.aerisjs.com/" target="_blank">Aeris.js beta on GitHub</a></li>    
+        </ul>
+      </li><br>
+    </ol>
+
+  </div><!--ends texDiv-->
+
+  <footer class="footer">
+    <!--Creative Commons-->
+    <h5><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"></a><br>This Aeris.js beta introduction is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>
+  
+    <br>Summarized & updated from video tutorial <a xmlns:dct="http://purl.org/dc/terms/" href="https://youtu.be/mNf8g1aSArw/" rel="dct:source" target="_blank">'How To Create A Weather Map With AerisJS'</a> by eschwartz<br>&copy; 2014 <a href="http://www.aerisweather.com/support" target="_blank">AerisWeather</a> (formerly Hamweather Aeris)</h5>
+
+    <h6>Creative Commons <i class="fa fa-creative-commons fa-lg" aria-hidden="true"></i> 2016. Thoughtfully compiled by <a href="http://codepen.io/yiuklh/" target="_blank">kyiu</a></h6>
+
+  </footer>
+      
+  <!--link jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+  <!--My JavaScript-->
+  <script>
+  //*your Aeris API Key assigned -Step3
+  //apiId: 'getyourapiIDataerisweatherdotcom',
+  //apiSecret: 'getyourapiSecretataerisweatherdotcom'
+
+  //Setup from existing Leaflet v0.7.7 -Step1
+
+  //Create map variable - Leaflet -Step2
+  var map = L.map('map', {
+    center: [44.811349, -91.498494],
+    zoom: 6,
+  });
+  //Eau Claire, WI 44.811349, -91.498494
+
+  //View OSM Default
+  /*
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+  }).addTo(map);
+  */
+
+  //View Esri World Imagery -Step2
+  
+  L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '2016 &copy; <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9" target="_blank">Esri World Imagery</a> ArcGIS Services'
+  }).addTo(map);
+  
+  //Create map tile layers - Aeris.js beta -Step4
+  //*Configure your Aeris API Key assigned - Step3
+  //*NOTE: Put the apiID and apiSecret into below url
+  //'http://maps.aerisapi.com/apiID_apiSecret/radar/{z}/{x}/{y}/current.png'
+  
+  //Radar layer
+  
+  L.tileLayer('http://maps.aerisapi.com/apiID_apiSecret/radar:70/{z}/{x}/{y}/current.png', {
+    attribution: '&copy; <a href="http://www.aerisweather.com/support/docs/" target="_blank">AerisWeather</a>'
+  }).addTo(map);
+  
+  //Infrared Satellite layer
+  
+  L.tileLayer('http://maps.aerisapi.com/apiID_apiSecret/satellite:70/{z}/{x}/{y}/current.png', {
+      attribution: '&copy; <a href="http://www.aerisweather.com/support/docs/" target="_blank">AerisWeather</a>'
+  }).addTo(map);
+  
+  //adjust opacity to 70% -Step5
+  //read url to modify code for Radar layer in step4 
+  
+  //Weather Map Created! -Step6
+  
+  //Other Add-ons -Step7
+  </script>
+</body>
+</html>
