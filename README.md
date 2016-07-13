@@ -13,4 +13,4 @@ Pre-requisite:
 Learners should have an exisiting basics Leaflet.js webmap setup. 
 < http://leafletjs.com/examples/quick-start.html >
 
-After my difficulties navigating available resources from documentations, which they were often explained in technical manners and can't comprehend as a beginner learner (some codes were even outdated and thus no longer work when attempted to tryout). I decided to compile a easier tutorial for the complete beginners that it explains in steps with links only to those updated info they needed to know or lookup from.
+After my difficulties navigating available resources from documentations, which they were often explained in technical manners and can't comprehend as a complete beginner learner (some codes were even outdated and thus no longer work when attempted to tryout). I decided to compile a much easier tutorial targeting for the beginners, which it shows in simpler steps with hyperlinks only to those updated info they may want to know or lookup from.
