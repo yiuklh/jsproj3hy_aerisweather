@@ -9,6 +9,8 @@ Project 3 focus on utilizing an API (Application Program Interface) to create a 
 
 In this project, I have chosen the "Intro to Aeris.js beta Weather Map" as my topic. Which I will walkthrough an introductory tutorial to setup a basic weather webmap using JavaScript. 
 
-Pre-requisite: Learners should have an exisiting basics Leaflet.js webmap setup. < http://leafletjs.com/examples/quick-start.html >
+Pre-requisite: 
+Learners should have an exisiting basics Leaflet.js webmap setup. 
+< http://leafletjs.com/examples/quick-start.html >
 
-After my difficulties navigating available resources from documentations, which they were often explained in technical manners and can't comprehend as a beginner learner (some codes were even outdated and thus no longer work when attempted to tryout). I decided to compile a easier tutorial for the complete beginners that it explains in steps with links only to those info they needed to know or lookup.
+After my difficulties navigating available resources from documentations, which they were often explained in technical manners and can't comprehend as a beginner learner (some codes were even outdated and thus no longer work when attempted to tryout). I decided to compile a easier tutorial for the complete beginners that it explains in steps with links only to those updated info they needed to know or lookup from.
