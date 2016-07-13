@@ -10,4 +10,4 @@ Pre-requisite:
 Learners should have an exisiting basics Leaflet.js webmap setup. 
 < http://leafletjs.com/examples/quick-start.html >
 
-After I had difficulties learning to setup a Aeris.js weather map while looked-up resources from available the official documentations (often very advanced materials posted on GitHub); I decided to compile a much simpler tutorial targeting for the complete beginners whom they likely may encountered similar challenges.
+After I had difficulties learning to setup a Aeris.js weather map (that's only a basic one!), while looked-up resources from available documentations (Often advanced materials on GitHub or developer websites). I decided to compile a much simpler tutorial targeting for the complete beginners, whom they may also encounter similar challenges.
