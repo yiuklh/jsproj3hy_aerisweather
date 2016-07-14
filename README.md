@@ -2,9 +2,9 @@ Date: July 2016
 
 This is an introductory JavaScript, jQuery learning project @hackeryou.
 
-Project 3 focus on developing something that is appropriate to your proficiency level, and yet being creatively challenging to create a simple front-end interactive user interfaces, perhaps considering an API (Application Program Interface) too! 
+Project 3 focus on developing something that is appropriate to my current beginner proficiency. Yet being creatively challenging to create a simple front-end interactive user interfaces that is doable within the short project timeframe. Perhaps considering an API (Application Program Interface) too! 
 
-Which I had programmed my first (ever) weather webmap/interactive online map! However, the primary objectives emphasize learning how to retrieve sample codes from an documentation (often available in an API's GitHub website), and lookup relevance resources to problem-solves and troubleshootings.  
+Which I programmed my first (ever) weather webmap/interactive online map! The primary objectives emphasize learning how to retrieve sample codes available from an documentation & often in an API's GitHub website, and lookup relevance resources to problem-solves and troubleshootings.  
 
 In this project, I have chosen the "Intro to Aeris.js beta Weather Map" as my topic. Which I will walkthrough an introductory tutorial to setup a basic weather webmap using JavaScript. 
 
