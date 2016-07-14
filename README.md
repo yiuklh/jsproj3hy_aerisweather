@@ -13,4 +13,4 @@ Pre-requisites:
 < http://leafletjs.com/examples/quick-start.html >
 - Basic proficiency with JavaScript, HTML, CSS
 
-After my difficulties had while setup a Aeris.js weather map (that's only a basic one to get started!), looked-up resources from available documentations (that are Often advanced materials on GitHub or developer websites). I decided to compile a much simpler tutorial targeting for the complete beginners, whom they may also encounter similar learning challenges.
+After my difficulties had while setup a Aeris.js weather map (that's only a basic one to get started!), looked-up resources from available documentations (that are often advanced materials on GitHub or developer websites). I decided to compile a much simpler tutorial targeting for the complete beginners, whom they may also encounter similar learning challenges.
