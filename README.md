@@ -6,7 +6,7 @@ Project 3 focus on developing something that is appropriate to my current beginn
 
 However, my primary learning objectives emphasized how to retrieve sample codes from an API documentation, and lookup appropriate resources to problem-solves and troubleshootings.  
 
-In this project, I have chosen the "Intro to Aeris.js beta Weather Map" as my topic. Which I will walkthrough an introductory tutorial to setup a basic weather webmap using JavaScript. Which means I had programmed my first (ever) weather webmap/interactive online map!  
+In this project, I have chosen the "Intro to Aeris.js beta Weather Map" as my topic; I will walkthrough an introductory tutorial to setup a basic weather webmap using JavaScript. Which also means I had programmed my first (ever) weather webmap/interactive online map!  
 
 Pre-requisites: 
 - Learners should have an exisiting basics Leaflet.js webmap setup. 
