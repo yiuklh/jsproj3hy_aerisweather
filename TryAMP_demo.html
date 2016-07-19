@@ -1,0 +1,203 @@
+<html lang="en">
+<!--BEGINNER NOTE: For simplicity, all the codes for JavaScript and CSS are put into THIS .html file-->
+<!--BEST PRACTICES should ALWAYS separate the .css, .js files from the .html.-->
+<!--Also rename the HTML to index.html intead after download. It was named as it is for filing purposes.-->	
+	
+<head>
+	<title>Aeris Maps Plateform AMP Animation</title>    
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+	<!--link Font Awesome CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	
+    <!--link Aeris Maps Platform (AMP) Animation-->
+  <link rel="stylesheet" href="https://cdn.aerisapi.com/css/aerismaps-animation.css">
+  <script src="https://cdn.aerisapi.com/js/aerismaps-animation.min.js"></script>
+        
+        <style>
+            /*Setup map dimensions*/
+            #map {
+              width: 500px;
+              height: 50px;
+              margin-left: 20%;
+            }
+			
+			/*Text Content styles*/
+			body {
+			  font-family: "Arial";
+			  color: #302D33;
+			  background-color: whitesmoke;
+			  line-height: 1.5; 
+			}
+
+			.textDiv {
+			  margin: 0 auto;
+			  padding: 20px 100px;
+			}
+
+			p, li {
+			  font-size: 18px;
+			}
+
+			ul {
+				list-style-type: disc;
+			}
+
+			.highlight {
+			  background: yellow;
+			}
+
+			.red {
+			  color: red;
+			  font-family: "Arial";
+			  font-weight: bold;
+			  font-size: 16px;
+			}
+
+			ol a {
+			  color: green;
+			}
+
+			a {
+			  text-decoration: none;
+			  color: #778899;
+			}
+
+			a:hover {
+			  color: black;
+			}
+
+			.footer {
+			  width: 90%;
+			  margin: 0 auto;
+			  padding: 10px 0 60px 0;
+			  text-align: center;
+			  color: grey;
+			}
+
+			h5 {
+			  font-weight: 300;
+			}
+			
+			.blue {
+				color: blue;
+				font-weight: bold;
+			}
+        </style>
+    </head>
+    
+    <body>
+    <!--map placeholder-->
+    <div id="map"></div>
+        
+    <!--text content-->
+    <div class="textDiv">
+		
+		<p class="red">//IMPORTANT: AerisWeather map tiles layers are mainly consist of USA data, hence the coverages in Canada may be limited.</p>
+			
+    	<p>Please consult <a href="https://weather.gc.ca/index_e.html" target="_blank" class="red">Environment Canada</a> for data services, and <a href="https://www.theweathernetwork.com/site-map" target="_blank" class="red">@weathernetwork</a> for weather forecasts in Canada.</p><br>
+
+		<h3><a href="http://codepen.io/yiuklh/pen/vKdggW/" target="_blank" title="Codepen" ><i class="fa fa-codepen fa-lg" aria-hidden="true"></i> http://codepen.io/yiuklh/pen/vKdggW/</a></h3> 
+		
+		<h2>Introduction to Aeris.js beta Weather Map</h2>
+		<h2>Aeris Maps Platform (AMP) Animation - FREE version</h2>
+
+    	<p><span class="highlight">*Note: This demo is for the free version with features restriction</span>; hence, some <a href="http://www.aerisweather.com/support/docs/aeris-maps/reference/map-layers/" target="_blank">map layers</a> are not available unless upgrade subscription.</p><br>
+
+    	<p>This map shows the radar + infrared satellite for the <u class="blue">past 24 hours in a 30 seconds</u> timelaspe animation <strong>(Sault Ste. Marie, Ontario + Michigan)</strong>.</p>
+
+		<ol>
+		  <li>Setup Aeris.js Weather:
+			<ul>
+			  <li>Link <a href="https://cdn.aerisapi.com/js/aerismaps-animation.min.js" target="_blank">aerismaps-animation.min.js</a> file from <a href="http://www.aerisweather.com/support/docs/aeris-maps/map-access/animation/" target="_blank">Aeris Maps Animator CDN</a></li>
+			  <li>Link <a href="https://cdn.aerisapi.com/css/aerismaps-animation.css" target="_blank">aerismaps-animation.css</a> file from <a href="http://www.aerisweather.com/support/docs/aeris-maps/map-access/animation/" target="_blank">Aeris Maps Animator CDN</a></li>
+			  <li>Sign up a FREE <a href="http://www.aerisweather.com/signup/" target="_blank">AerisWeather API Developer</a> account</li>
+			  <li><span class="highlight"><strong>Get an Aeris API key</strong></span>, will need yours coding this webmap to work.</li>
+			</ul>
+		  </li><br>
+
+		  <li><span class="highlight"><strong>Configure Aeris API key</strong></span></li><br>
+
+		  <li>*Choose the Aeris Map Tiles layers to overlay:
+			<ul>
+			  <li>Radar -USA updates per 6min.</li>
+			  <li>Infrared Satellite -North America, updates per 30 min.</li>
+			</ul>
+		  </li><br>
+
+		  <li>You have created your first AerisWeather map with temporal animation :) !</li><br>
+
+		  <li>Learn more at <a href="http://www.aerisweather.com/support/docs/aeris-maps/" target="_blank">Aeris Maps Platform (AMP)</a>.
+			<ul>
+			  <li><a href="http://www.aerisweather.com/support/docs/aeris-maps/map-access/animation/" target="_blank">AerisWeather Animation</a></li>
+			  <li><a href="http://www.aerisweather.com/support/docs/" target="_blank">Support Help Center</a></li>
+			  <li><a href="https://github.com/aerisweather/aerismaps-animator" target="_blank">Aeris Maps Animiation on GitHub</a></li>
+			</ul>
+		  </li><br>
+		  <li>If confuse, see the <a href="http://codepen.io/yiuklh/pen/EywpZL" target="_blank">Intro to Aeris.js Weather Map</a> demo.</li><br>
+		</ol>
+  	</div><!--ends textDiv-->
+
+	<footer class="footer">
+		<!--Creative Commons-->
+		<h5><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"></a><br>This Aeris.js beta introduction is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>
+
+		<br>Summarized from tutorial <a xmlns:dct="http://purl.org/dc/terms/" href="http://www.aerisweather.com/support/docs/aeris-maps//" rel="dct:source" target="_blank">Aeris Maps Platform (AMP) Animation</a> &copy; 2016 <a href="http://www.aerisweather.com/support" target="_blank">AerisWeather</a></h5>
+
+		<h6>Creative Commons <i class="fa fa-creative-commons fa-lg" aria-hidden="true"></i> 2016. Thoughtfully compiled by <a href="http://codepen.io/yiuklh/" target="_blank">kyiu</a></h6>
+	</footer>
+
+  	<!--*Get FREE Aeris API Key at http://www.aerisweather.com/signup/ --> 		  
+    
+	<script>
+    //Sault Ste Marie, ON + MI 46.495300, -84.345317       
+    //*your Aeris API Key assigned -Step1
+    //apiId: 'getyourapiIDataerisweatherdotcom',
+    //apiSecret: 'getyourapiSecretataerisweatherdotcom'
+            
+    //*Configure your Aeris API Key assigned - Step2
+            
+    //Choose Aeris map tile layers to overlay -Step3
+            
+    //Try radar temporal animation with AMP
+    //<https://github.com/aerisweather/aerismaps-animator>
+    //<http://www.aerisweather.com/support/docs/aeris-maps/>
+    //<http://www.aerisweather.com/support/docs/aeris-maps/map-access/animation/>
+            
+    //NOTE: Below codes have console log error when runs - Failed to load resource, BUT it actually works on Codepen
+            
+    	var animator = new AerisMaps.Animation("#map", {
+				loc: [46.495300, -84.345317],
+				//Sault Ste Marie ON   
+
+				keys: {
+					id: 'getyourapiIDataerisweatherdotcom',
+					secret: 'getyourapiSecretataerisweatherdotcom'
+				}, // -Step2
+
+				map: {
+					zoom: 6,
+					layers: ["flat","satellite", "radar", "admin"]
+				},
+
+				autoplay: true,
+				animation: {
+					from: -24 * 3600,
+					duration: 30,
+					endDelay: 3
+				}, //set animation for past 24 hrs in 30 secs with 3 sec delay resume
+
+				overlays: {
+					title: `Sault Ste. Marie, ON &copy;AerisWeather`,
+					timestamp: {
+					  format: 'MM/dd/yyyy hh:mm tt',
+					  continuous: true,
+					}
+				}
+            }); //ends animator
+
+            //Weather Map Animation Created! -Step6
+        </script>
+    </body>
+</html>
